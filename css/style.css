@@ -1,31 +1,63 @@
+*{
+    border: 1px solid red;
+}
+
 body{
     margin: 0;
 }
 
 header{
-    background-color: black;
+    background-color: #0e1113;
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 50px;
 }
 
-header a{
+.navlogo{
     display: inline-block;
-    
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+    position: relative;
+    border-radius: 50px;
+}
+
+.navlogo img{
+    border-radius: 50px;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 
 .navmenu{
-    border: 1px solid white;
-    border-radius: 5px;
+    margin-right: 50px;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: flex;
 }
 
 .navmenu a{
-    padding: 10px;
+    padding: 15px;
     display: inline-block;
     color: white;
     text-decoration: none;
+    text-align: center;
 }
 
 .navborder{
-    border-right: 1px solid white;
+    border-right: 3px solid white;
+}
+
+.pagetitle{
+    text-align: center;
+}
+
+.pagetitle h1{
+    margin: 0;
+    color: #0e1113;
+}
+
+.pagetitle h3{
+    color: grey;
 }
