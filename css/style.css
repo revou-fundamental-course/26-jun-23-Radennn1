@@ -51,6 +51,7 @@ header{
 
 .pagetitle{
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .pagetitle h1{
@@ -60,4 +61,25 @@ header{
 
 .pagetitle h3{
     color: grey;
+}
+
+.contactus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    flex-basis: 75%;
+    position: relative;
+}
+
+.left img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.rigth{
+    flex-basis: 25%;
 }
