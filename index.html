@@ -6,14 +6,14 @@
     <title>E-Groceries</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body> 
     <header>
-            <a href="" class="navlogo"><img src="./assets/RevoULogo.png"></a>
-        <div class="navmenu">
-            <a href="" class="navborder">Home</a>
-            <a href="" class="navborder">Our Package</a>
-            <a href="">Our Contact</a>
-        </div>
+        <a href="#Home" class="navlogo"><img src="./assets/RevoULogo.png"></a>
+    <div class="navmenu">
+        <a href="#Home" class="navborder">Home</a>
+        <a href="" class="navborder">Our Package</a>
+        <a href="">Our Contact</a>
+    </div>
     </header>
     <div class="pagetitle" id="Home">
         <h1>Top Rated E-Groceries Shop in</h1>
@@ -23,10 +23,44 @@
     <div class="contactus">
         <div class="left">
             <img src="./assets/GorceriesImg.jpg">
-            <p>Cari kebutuhan anda disini!</p>
+            <div class="userReview">
+                <p><em>"Barang lengkap dan harga terjangkau!"</em></p>
+                <div class="users">
+                    <img src="./assets/user.svg">
+                    <div class="userinfo">
+                        <p id="username"><strong>Regina Phalange</strong></p>
+                        <p><em>Mahasiswi,</em> 19</p>
+                    </div>
+                </div>
+                <p><em>"Pelayanan sangat ramah"</em></p>
+                <div class="users">
+                    <img src="./assets/user.svg">
+                    <div class="userinfo">
+                        <p id="username"><strong>Ken Adam</strong></p>
+                        <p><em>Mahasiswa,</em> 19</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="right">
-
+            <div class="formtitle">
+                <h3>Contact Us</h3>
+                <p>Sales akan menghubungi anda 1x24 jam setelah data anda kami terima</p>
+            </div>
+            <div class="forminput">
+                <label for="name">Your Name:</label>
+                <input type="text" placeholder="First and last name" id="name">
+                <label for="email">Email Address:</label>
+                <input type="text" placeholder="example@email.com" id="email">
+                <label for="option">What are you interested in?</label>
+                <select id="option">
+                    <option value="">Select option</option>
+                    <option value="foods">Frozen Food</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="tools">Tools</option>
+                </select>
+                <button>SEND</button>
+            </div>
         </div>
     </div>
 </body>
