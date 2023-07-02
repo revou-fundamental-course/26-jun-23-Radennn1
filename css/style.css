@@ -219,4 +219,44 @@ header{
 .packages{
     display: flex;
     flex-direction: column;
+    margin: 0 250px;
+    margin-bottom: 50px;
+}
+
+.pac{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pack{
+    flex: 1;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.packlog{
+    flex-basis: 20%;
+    position: relative;
+    padding-left: 7px;   
+}
+
+.packlog img{
+    position: absolute;
+    width: 80%;
+    background-color: rgba(156, 154, 154, 0.444);
+    border-radius: 50%;
+}
+
+.packtext{
+    flex-basis: 80%;
+}
+
+.packtext h4{
+    margin-top: 10px;
+}
+
+.longline{
+    border: 3px solid rgba(156, 154, 154, 0.444);
 }
