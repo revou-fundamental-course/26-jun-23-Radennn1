@@ -91,7 +91,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: start;
-    padding-left: 30px;
+    padding: 0 30px;
 }
 
 .userReview p{
