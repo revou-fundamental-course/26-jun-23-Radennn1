@@ -55,7 +55,7 @@
                     </div>
                     <div class="liex">
                         <div class="linum"><strong>3</strong></div>
-                        <p>Produk diantar dengan pelayanan yang dijamin cepat dan ramah.</p>
+                        <p>Produk diantar dengan cepat dan pelayanan yang dijamin ramah.</p>
                     </div>
                 </div>
             </div>
@@ -65,21 +65,37 @@
                 <h3>Contact Us</h3>
                 <p>Sales akan menghubungi anda 1x24 jam setelah data anda kami terima</p>
             </div>
-            <div class="forminput">
+            <form class="forminput" name="formbox" onsubmit="return validateForm()">
                 <label for="name">Your Name:</label>
-                <input type="text" placeholder="First and last name" id="name">
+                <input type="text" placeholder="First and last name" id="name" name="inName">
                 <label for="email">Email Address:</label>
-                <input type="text" placeholder="example@email.com" id="email">
+                <input type="text" placeholder="example@email.com" id="email" name="inEmail">
                 <label for="option">What are you interested in?</label>
-                <select id="option">
+                <select id="option" name="inOption">
                     <option value="">Select option</option>
                     <option value="foods">Foods</option>
                     <option value="drinks">Drinks</option>
                     <option value="herbs">Herbs & ingredients</option>
                     <option value="tools">Cook Ware</option>
                 </select>
-                <button>SEND</button>
-            </div>
+                <button value="Submit">SEND</button>
+            </form>
+
+            <script>
+                function validateForm(){
+                    var Inname = document.forms["formbox"]["inName"].value;
+                    var Inemail = document.forms["formbox"]["inEmail"].value;
+                    var Inoption = document.forms["formbox"]["inOption"].value;
+
+                    if (Inname == "" || Inemail == "" || Inoption == ""){
+                        alert("Input Tidak Boleh Kosong!!!");
+                        return false;
+                    }
+
+                    return false;
+                }
+            </script>
+
         </div>
     </div>
     <div class="ourpackage" id="packagetitle">
@@ -136,7 +152,7 @@
     </div>
     <div class="longline"></div>
     <div class="closingaction" id="callus">
-        <h1>Lengkapi Dapur Anda, Lengkapi Kualitas Makanan Keluarga</h1>
+        <h1>Lengkapi Dapur Anda, Tingkatkan Kualitas Makanan Keluarga</h1>
         <p>Tingkatkan kenyamanan dapur anda untuk makanan keluarga yang lebih baik. Temukan 
             Kebutuhan dapur anda dengan mudah dan dapatkan harga terbaik disini. Hubungi kami unutk informasi
             selengkapnya dengan menekan tombol dibawah.
