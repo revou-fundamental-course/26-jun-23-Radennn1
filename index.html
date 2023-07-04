@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Groceries</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/script.js"></script>
 </head>
 <body> 
     <header>
@@ -80,22 +81,6 @@
                 </select>
                 <button value="Submit">SEND</button>
             </form>
-
-            <script>
-                function validateForm(){
-                    var Inname = document.forms["formbox"]["inName"].value;
-                    var Inemail = document.forms["formbox"]["inEmail"].value;
-                    var Inoption = document.forms["formbox"]["inOption"].value;
-
-                    if (Inname == "" || Inemail == "" || Inoption == ""){
-                        alert("Input Tidak Boleh Kosong!!!");
-                        return false;
-                    }
-
-                    return false;
-                }
-            </script>
-
         </div>
     </div>
     <div class="ourpackage" id="packagetitle">

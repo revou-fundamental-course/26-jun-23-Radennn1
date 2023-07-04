@@ -9,6 +9,7 @@ header{
     justify-content: space-between;
     padding: 20px;
     margin-bottom: 50px;
+    border-bottom: 5px solid #FFFE03;
 }
 
 .navlogo{
