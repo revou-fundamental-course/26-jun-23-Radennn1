@@ -79,7 +79,11 @@ header{
     text-align: center;
 }
 
-.left img{
+.sliderbox{
+    margin-bottom: 30px;
+}
+
+.slideimg{
     border-radius: 10px;
     width: 100%;
     height: auto;
