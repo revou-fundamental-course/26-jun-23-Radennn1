@@ -8,3 +8,20 @@ function validateForm(){
     }
     return false;
 }
+
+var index=0;
+function imageSlider(){
+    setTimeout(imageSlider, 2000)
+    var gambar;
+    var arrayImg = document.getElementsByClassName("slideimg");
+    for(gambar = 0; gambar<arrayImg.length; gambar++){
+        arrayImg[gambar].style.display="none"
+    }
+    index++;
+    if(index>=arrayImg.length){
+        index=0;
+    }
+    arrayImg[index].style.display="block";
+}
+
+imageSlider();
